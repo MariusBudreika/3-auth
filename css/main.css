@@ -8,12 +8,15 @@ body * {
 
 }
 
+
+
 body {
  background-color: #8ecadf;
 }
 
 .container {
     display: inline-block;
+    position: relative;
     width: 800px;
     margin-top: 100px;
     margin-left: calc((100% - 800PX) / 2);
@@ -21,15 +24,25 @@ body {
 }
 
 .left-column {  
-    float: left;
+    display: inline-block;
     padding: 30px;
     width: 40%;
     background-color: #0051a9;
+    background-image: url("../images/leftcolumn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center; 
 
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 0;
+    
+    
 }
 
 .main-title {
-    margin-bottom: 100px;
+    
     width: 100%;
     font-size: 30px;
     line-height: 30px;
@@ -38,6 +51,11 @@ body {
 
 .bottom-links {
     display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+
 }
 
 .link {
@@ -49,7 +67,7 @@ body {
 }
 
 .right-column {
-    float: left;
+    float: right;
     padding: 60px;
     width: 60%;
     background-color: #fff;
